@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>portafolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -15,145 +19,181 @@
   </head>
   <body>
     <header class="header">
-      <nav>
-        <a href="./index.html" class="icon-header">
-          <span class="icon-blue">Web</span>Studio</a
-        >
-        <ul>
+      <div class="container page-header">
+        <a href="./index.html" class="icon-header icon-contain">WebStudio</a>
+        <ul class="page-header">
           <li>
-            <a href="./index.html" class="header-ref">Estudio</a>
+            <a href="./index.html" class="header-ref links-header">Estudio</a>
           </li>
           <li>
-            <a href="./portfolio.html" class="header-ref color-site"
+            <a
+              href="./portfolio.html"
+              class="header-ref links-header color-site"
               >Portafolio</a
             >
           </li>
           <li>
-            <a href="#" class="header-ref">Contactos</a>
+            <a href="#" class="header-ref links-header">Contactos</a>
           </li>
         </ul>
-      </nav>
-      <ul>
-        <li>
-          <a href="mailto:info@devstudio.com" class="mail"
-            >info@devstudio.com</a
-          >
-        </li>
-        <li>
-          <a href="tel:+525555296000" class="tel">+52 55 5529 6000</a>
-        </li>
-      </ul>
-    </header>
-    <main>
-      <section>
-        <header class="hidden-header"></header>
-        <ul class="filter-text">
+        <ul class="page-header-contain">
           <li>
-            <button type="button" class="filter-btn filter-text">Todo</button>
-          </li>
-          <li>
-            <button type="button" class="filter-btn filter-text">
-              Sitios-web
-            </button>
-          </li>
-          <li>
-            <button type="button" class="filter-btn filter-text">
-              Aplicaciones
-            </button>
-          </li>
-          <li>
-            <button type="button" class="filter-btn filter-text">Diseño</button>
-          </li>
-          <li>
-            <button type="button" class="filter-btn filter-text">
-              Marketing
-            </button>
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <img src="./images/tecnoduck.jpg" alt="Tecnoduck" width="370px" />
-            <h3 class="product-title">Tecnoduck</h3>
-            <p class="product-descript">Sitio-web</p>
-          </li>
-          <li>
-            <img src="./images/neworleansposter.jpg" alt="Póster" width=/>
-            <h3 class="product-title">
-              Póster de Nueva Orleans vs Estrella Dorada
-            </h3>
-            <p class="product-descript">Sitio-web</p>
-          </li>
-          <li>
-            <img
-              src="./images/seafoodrestaurant.jpg"
-              alt="sea food"
-              width="370px"
-            />
-            <h3 class="product-title">Restaurante Seafood</h3>
-            <p class="product-descript">Aplicaciones</p>
-          </li>
-          <li>
-            <img src="./images/primeproject.jpg" alt="proyecto" width="370px" />
-            <h3 class="product-title">Proyecto Prime</h3>
-            <p class="product-descript">Marketing</p>
-          </li>
-          <li>
-            <img src="./images/boxproject.jpg" alt="cajas" width="370px" />
-            <h3 class="product-title">Proyecto Cajas</h3>
-            <p class="product-descript">Aplicaciones</p>
-          </li>
-          <li>
-            <img
-              src="./images/unilimitedinspiration.jpg"
-              alt="limites"
-              width="370px"
-            />
-            <h3 class="product-title">La inspiración no tiene limites</h3>
-            <p class="product-descript">Sitio-Web</p>
-          </li>
-          <li>
-            <img
-              src="./images/limitededition.jpg"
-              alt="edicion limitada"
-              width="370px"
-            />
-            <h3 class="product-title">Edición Limitada</h3>
-            <p class="product-descript">Diseño</p>
-          </li>
-          <li>
-            <img src="./images/projectlab.jpg" alt="LAB" width="370px" />
-            <h3 class="product-title">Proyecto LAB</h3>
-            <p class="product-descript">Marketing</p>
-          </li>
-          <li>
-            <img
-              src="./images/growingbusiness.jpg"
-              alt="Aplicaciones"
-              width="370px"
-            />
-            <h3 class="product-title">Negocio en Crecimiento</h3>
-            <p class="product-descript">Aplicaciones</p>
-          </li>
-        </ul>
-      </section>
-    </main>
-    <footer class="footer">
-      <a href="./index.html" class="icon-footer">
-        <span class="icon-footer-blue">Web</span>Studio</a
-      >
-      <address class="address">
-        <ul>
-          <li>Calz. Ticomán 500, Ciudad de México, CDMX, México</li>
-          <li>
-            <a href="mailto:info@devstudio.com" class="footer-mail"
+            <a
+              href="mailto:info@devstudio.com"
+              class="mail links-header-contain"
               >info@devstudio.com</a
             >
           </li>
           <li>
-            <a href="tel:+525555296000" class="footer-tel">+52 55 5529 6000</a>
+            <a href="tel:+525555296000" class="tel links-header-contain"
+              >+52 55 5529 6000</a
+            >
           </li>
         </ul>
-      </address>
+      </div>
+    </header>
+    <main>
+      <section class="section-main">
+        <div class="container main-content">
+          <header class="hidden-header"></header>
+          <ul class="filter-text btn-content">
+            <li>
+              <button type="button" class="filter-btn filter-text">Todo</button>
+            </li>
+            <li>
+              <button type="button" class="filter-btn filter-text">
+                Sitios-web
+              </button>
+            </li>
+            <li>
+              <button type="button" class="filter-btn filter-text">
+                Aplicaciones
+              </button>
+            </li>
+            <li>
+              <button type="button" class="filter-btn filter-text">
+                Diseño
+              </button>
+            </li>
+            <li>
+              <button type="button" class="filter-btn filter-text">
+                Marketing
+              </button>
+            </li>
+          </ul>
+          <ul class="main-content-items">
+            <li class="container-card">
+              <img src="./images/tecnoduck.jpg" alt="Tecnoduck" width="370" />
+              <div class="body-items">
+                <h3 class="product-title item">Tecnoduck</h3>
+                <p class="product-descript">Sitio-web</p>
+              </div>
+            </li>
+            <li class="container-card">
+              <img
+                src="./images/neworleansposter.jpg"
+                alt="Póster"
+                width="370"
+              />
+              <div class="body-items">
+                <h3 class="product-title item">
+                  Póster de Nueva Orleans vs Estrella Dorada
+                </h3>
+                <p class="product-descript">Sitio-web</p>
+              </div>
+            </li>
+            <li class="container-card">
+              <img
+                src="./images/seafoodrestaurant.jpg"
+                alt="sea food"
+                width="370"
+              />
+              <div class="body-items">
+                <h3 class="product-title item">Restaurante Seafood</h3>
+                <p class="product-descript">Aplicaciones</p>
+              </div>
+            </li>
+            <li class="container-card">
+              <img src="./images/primeproject.jpg" alt="proyecto" width="370" />
+              <div class="body-items">
+                <h3 class="product-title item">Proyecto Prime</h3>
+                <p class="product-descript">Marketing</p>
+              </div>
+            </li>
+            <li class="container-card">
+              <img src="./images/boxproject.jpg" alt="cajas" width="370" />
+              <div>
+                <h3 class="product-title item">Proyecto Cajas</h3>
+                <p class="product-descript">Aplicaciones</p>
+              </div>
+            </li>
+            <li class="container-card">
+              <img
+                src="./images/unilimitedinspiration.jpg"
+                alt="limites"
+                width="370"
+              />
+              <div>
+                <h3 class="product-title item">
+                  La inspiración no tiene limites
+                </h3>
+                <p class="product-descript">Sitio-Web</p>
+              </div>
+            </li>
+            <li class="container-card">
+              <img
+                src="./images/limitededition.jpg"
+                alt="edicion limitada"
+                width="370"
+              />
+              <div>
+                <h3 class="product-title item">Edición Limitada</h3>
+                <p class="product-descript">Diseño</p>
+              </div>
+            </li>
+            <li class="container-card">
+              <img src="./images/projectlab.jpg" alt="LAB" width="370" />
+              <div>
+                <h3 class="product-title item">Proyecto LAB</h3>
+                <p class="product-descript">Marketing</p>
+              </div>
+            </li>
+            <li class="container-card">
+              <img
+                src="./images/growingbusiness.jpg"
+                alt="Aplicaciones"
+                width="370"
+              />
+              <div>
+                <h3 class="product-title">Negocio en Crecimiento</h3>
+                <p class="product-descript">Aplicaciones</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container footer-container">
+        <a href="./index.html" class="icon-footer contain-items">WebStudio</a>
+        <address class="address contain-items">
+          <ul>
+            <li>Calz. Ticomán 500, Ciudad de México, CDMX, México</li>
+            <li>
+              <a
+                href="mailto:info@devstudio.com"
+                class="footer-mail contain-items"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li>
+              <a href="tel:+525555296000" class="footer-tel"
+                >+52 55 5529 6000</a
+              >
+            </li>
+          </ul>
+        </address>
+      </div>
     </footer>
   </body>
 </html>
